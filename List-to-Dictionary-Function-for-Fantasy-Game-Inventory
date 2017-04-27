@@ -1,0 +1,20 @@
+backpack = {'rope': 1, 'torch': 5, 'gold coin': 420, 'zard': 1, 'arrow': 12 }
+dragonLoot = {'gold coin': 500, 'dragon scale': 1, 'dragons essence': 1}
+
+
+def displayInventory(inventory):
+    print("Inventory:")
+    item_count = 0
+    for k, v in inventory.items():
+        print(str(v) + ' ' + k)
+        item_count =+ 1
+    print ("Total number of items: " + str(item_count))
+
+def addToInventory(inventory, addedItems):
+    for k, v in addedItems.items():
+        inventory.setdefault(k, 0)
+        inventory[k] = inventory[k] + v
+
+
+addToInventory(backpack, dragonLoot)
+displayInventory(backpack)
