@@ -1,5 +1,6 @@
 backpack = {'rope': 1, 'torch': 5, 'gold coin': 420, 'zard': 1, 'arrow': 12 }
 dragonLoot = {'gold coin': 500, 'dragon scale': 1, 'dragons essence': 1}
+wolfLoot = {'pelt': 1, 'wolfmeat': 2, 'arrow': 8}
 
 
 def displayInventory(inventory):
@@ -7,8 +8,9 @@ def displayInventory(inventory):
     item_count = 0
     for k, v in inventory.items():
         print(str(v) + ' ' + k)
-        item_count =+ 1
+        item_count += v
     print ("Total number of items: " + str(item_count))
+
 
 def addToInventory(inventory, addedItems):
     for k, v in addedItems.items():
@@ -17,4 +19,5 @@ def addToInventory(inventory, addedItems):
 
 
 addToInventory(backpack, dragonLoot)
+addToInventory(backpack, wolfLoot)
 displayInventory(backpack)
