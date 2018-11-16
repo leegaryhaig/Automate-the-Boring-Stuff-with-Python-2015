@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/irt/PycharmProjects/debugging/errorExample.py", line 11, in <module>
+    spam()
+  File "/Users/irt/PycharmProjects/debugging/errorExample.py", line 7, in spam
+    bacon()
+  File "/Users/irt/PycharmProjects/debugging/errorExample.py", line 9, in bacon
+    raise Exception('This is the error message')
+Exception: This is the error message
