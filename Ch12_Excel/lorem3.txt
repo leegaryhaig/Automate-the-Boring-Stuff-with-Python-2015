@@ -1,0 +1,5 @@
+ which tells us that we need to move the pointer by these many places. It also accepts an optional argument which specifies
+  the direction of movement of the pointer, for which valid values are '0', '1' and '2'. '0' is the default value and it
+  specifies that the movement should be from absolute position i.e. from the beginning of the file. '1' indicates that
+  the movement should from relative position i.e. from the current position. '2' signifies the movement to the offset with
+  reference to the end of the file i.e. backward movement. To

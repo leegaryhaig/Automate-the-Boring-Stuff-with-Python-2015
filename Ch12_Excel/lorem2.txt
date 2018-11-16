@@ -1,0 +1,4 @@
+Whenever we create a file object for a file, suppose that, we have a pointer which keeps record of our current position
+in the opened file. For a newly created file object, its default value is '0' i.e. start of the file. With this method,
+ we can move this pointer from one position to another within a file. This method accepts one mandatory argument offset
+verify this, we should learn tell() method first.
